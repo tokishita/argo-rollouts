@@ -1,6 +1,6 @@
 global:
   rollout:
-    image: argoproj/rollouts-demo:blue
+    image: argoproj/rollouts-demo:green
 
 replicaCount: 2
 revisionHistoryLimit: 2
