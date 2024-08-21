@@ -10,6 +10,7 @@ clusterGroup:
   - vault
   - golang-external-secrets
   - argo-rollouts
+  - bluegreen
 
   subscriptions:
     acm:
@@ -32,6 +33,12 @@ clusterGroup:
         kind: ManagedClusterInfo
         jsonPointers:
           - /spec/loggingCA
+
+    bluegreen:
+      name: bluegreen
+      namespace: bluegreen
+      project: argo-rollouts
+      path: charts/all/bluegreen
 
     vault:
       name: vault
